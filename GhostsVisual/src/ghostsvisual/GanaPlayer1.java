@@ -33,6 +33,10 @@ public class GanaPlayer1 extends javax.swing.JFrame {
         jLabelBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(300, 225));
+        setMinimumSize(new java.awt.Dimension(300, 225));
+        setPreferredSize(new java.awt.Dimension(300, 225));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabelRazon.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -58,9 +62,6 @@ public class GanaPlayer1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonContinuarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonContinuarMousePressed
-        //Cerrar Tablero.
-        TableroVisual cerrar = new TableroVisual();
-        cerrar.setVisible(false);
         //Ir al MenuPrincipal.
         GhostsMenuPrincipal abrir = new GhostsMenuPrincipal();
         abrir.setVisible(true);

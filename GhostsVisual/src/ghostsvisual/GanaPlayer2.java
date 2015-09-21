@@ -33,6 +33,10 @@ public class GanaPlayer2 extends javax.swing.JFrame {
         jLabelBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(300, 225));
+        setMinimumSize(new java.awt.Dimension(300, 225));
+        setPreferredSize(new java.awt.Dimension(300, 225));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabelRazon.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -42,6 +46,11 @@ public class GanaPlayer2 extends javax.swing.JFrame {
         jLabelRazon.setBounds(93, 120, 190, 20);
 
         jButtonContinuar.setText("Continuar");
+        jButtonContinuar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButtonContinuarMousePressed(evt);
+            }
+        });
         getContentPane().add(jButtonContinuar);
         jButtonContinuar.setBounds(183, 150, 90, 23);
 
@@ -51,6 +60,13 @@ public class GanaPlayer2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonContinuarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonContinuarMousePressed
+        //Ir al MenuPrincipal.
+        GhostsMenuPrincipal abrir = new GhostsMenuPrincipal();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonContinuarMousePressed
 
     /**
      * @param args the command line arguments

@@ -237,7 +237,7 @@ public class SubmenuUlt10Juegos extends javax.swing.JFrame {
     }
     
     //Funcion para imprimir los ultimos 10 juegos.
-    public void ImprimirUlt10Juegos(){
+    private void ImprimirUlt10Juegos(){
         //Actualiza lo almacenado en el arreglo de el usuario de sus ultimos 10 juegos.
         jLabelJuego1.setText(Player.usuarios[Player.posuser1].ult10[0]);
         jLabelJuego2.setText(Player.usuarios[Player.posuser1].ult10[1]);
